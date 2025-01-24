@@ -20,3 +20,5 @@ if esPalindromo:
   print(f"la palabra --{word}-- es un palindromo")
 else:
   print(f"la palabra --{word}-- NO ES un palindromo")
+  
+# Alternativa https://github.com/kuzmicheff/palindrome/blob/master/palindrome.py
