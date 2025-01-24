@@ -40,3 +40,4 @@ if eleccion_jugador2 > 0 and eleccion_jugador2 < 4:
 else:
   print("Opcion inválida - Fin")
      
+# otra opcion: https://www.youtube.com/watch?v=5wfxO_juzYM
