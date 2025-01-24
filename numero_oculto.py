@@ -36,18 +36,19 @@
 import random
 
 number = random.randrange(1, 50)
-guess = int(input("Guess a number between 1 and 50: "))
+print(f"number: {number}")
+guess = int(input("Adiviná el número entre 1 y 50: "))
 
 attempts = 1
 
 while guess != number:
   if guess < number:
     attempts += 1
-    print("You need to guess higher. Try again")
-    guess = int(input("\nGuess a number between 1 and 50: "))
+    print("Un poco mas alto. Intenta de nuevo.")
+    guess = int(input("\nAdiviná el número entre 1 y 50: "))
   else: 
     attempts += 1
-    print("You need to guess lower. Try again")
-    guess = int(input("\nGuess a number between 1 and 50: "))
+    print("Un poco mas bajo. Intenta de nuevo.")
+    guess = int(input("\nAdiviná el número entre 1 y 50: "))
     
-print(f"You guessed the number correctly in {attempts} attempts")
+print(f"Adivinaste y acertaste en {attempts} intentos!")
