@@ -1,5 +1,3 @@
-# import math
-
 factura = int(input("Cual es el total de la factura: "))
 personas = int(input("Cuantos comenzales son: "))
 cuanta_propina = int(input("Cuánta propina quiere dejar 1 (18%), 2 (20%), 3 (25%): "))
@@ -19,7 +17,24 @@ costo_factura_por_persona = round(factura / personas)
 propina_por_persona = round(propina_total / personas)
 costo_final_por_persona = round(costo_factura_por_persona + propina_por_persona)
 
-print(f'''\nResumen:
+choice = int(input("Quiere ser generoso y pagar el 70'%' usted?: 1(SI) 2(NO)"))
+
+if choice == 1:
+  print(f'''\nResumen de persona generosa:
+      Factura: ${factura}
+      Cantidad de personas: {personas}
+      Propina total: ${propina_total}
+      Factura con propina: ${factura_con_propina}
+      Quien invita el 70%: ${factura * 0.7}
+      Invitado: ${factura * 0.3}
+      Propina que pone quien invita: ${propina_total * 0.7}
+      Propina que pone el invitado ${propina_total * 0.3}
+      
+      Anfitrion: $ {(factura * 0.7) + (propina_total * 0.7)}
+      Invitado: $ {(factura * 0.3) + (propina_total * 0.3)}
+      ''')
+else:
+  print(f'''\nResumen:
       Factura: ${factura}
       Cantidad de personas: {personas}
       Propina total: ${propina_total}
